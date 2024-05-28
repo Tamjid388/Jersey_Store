@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jersey Design Editor</title>
+    <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- FontAwesomeCDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body> 
+    <nav class="navbar">
+        <div class="JS-logo">
+          <img
+            src="img/logo.jpg"
+          
+          />
+        </div>
+  
+        <ul class="menu">
+          <a href=""></a>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Jersey Collection.html">Jersey</a></li>
+          <li><a href="Accessries.html">Accessories</a></li>
+          <li><a href="custom.html">Custom</a></li>
+          <li><a href="about us2.html">About</a></li>
+          <li><a href="login.html"><span class="btn">Join Now</span></a></li>
+          <li>
+            <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+          </li>
+        </ul>
+      </nav>
+    <div class="editing-panel">
+
+
+   
+    <div class="container">
+        <div class="toolbar">
+            <div class="tool" id="zoom-in"><button>🔍+</button></div>
+            <div class="tool" id="zoom-out">🔍-</div>
+            <div class="tool" id="undo">↩️</div>
+            <div class="tool" id="redo">↪️</div>
+            <div class="tool" id="reset">⟳</div>
+            <div class="box"></div>
+        </div>
+
+        <div class="jersey-preview">
+            <!-- <img src="download (6).png" alt="Jersey Preview" id="jersey-image">
+            <div class="text-preview" id="text-preview">PLAYER</div> -->
+
+            <div class="box">
+                <div class="text-preview" id="text-preview">PLAYER</div> 
+            </div>
+        </div>
+
+        <div class="editor">
+            <!-- <div class="jersey-preview">
+                <img src="download (1).png" alt="Jersey Preview" id="jersey-image">
+                <div class="text-preview" id="text-preview">PLAYER</div>
+            </div> -->
+
+            <div class="controls">
+                <div class="text-controls">
+                    <label for="text">TEXT</label>
+                    <input type="text" id="text" value="PLAYER" oninput="updateText()">
+
+                    <label for="font">FONT</label>
+                    <select id="font" onchange="updateFont()">
+                        <option value="Arial">Arial</option>
+                        <option value="Verdana">Verdana</option>
+                        <option value="Brobot">Brobot</option>
+                    </select>
+
+                    <label for="color">COLOR</label>
+                    <input type="color" id="color" value="#000000" onchange="updateColor()">
+
+                    <label for="font-size">FONT SIZE</label>
+                    <input type="range" id="font-size" min="10" max="100" value="40" oninput="updateFontSize()">
+
+                    <label for="alignment">HORIZONTAL ALIGNMENT</label>
+                    <select id="alignment" onchange="updateAlignment()">
+                        <option value="left">Left</option>
+                        <option value="center">Center</option>
+                        <option value="right">Right</option>
+                    </select>
+
+                    <label for="letter-spacing">LETTER SPACING</label>
+                    <input type="range" id="letter-spacing" min="0" max="100" value="0" oninput="updateLetterSpacing()">
+
+                    <label for="line-spacing">LINE SPACING</label>
+                    <input type="range" id="line-spacing" min="0" max="100" value="0" oninput="updateLineSpacing()">
+                  <div class="btnshare">
+                    <div class="box">
+                        <button><i class="fa-solid fa-share-from-square"></i>Share</button>
+                    </div>
+                    <div class="box">
+                        <button><i class="fa-solid fa-floppy-disk"></i>Save Design</button>
+                    </div>
+
+                  </div> 
+                </div>
+            </div>
+        </div>
+        <div class="share-save">
+            <button class="add-to-cart">ADD TO CART</button>
+
+        </div>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<footer>
+    <div class="container">
+      <div class="column">
+        <h3>Jersey Stories</h3>
+        <p>
+          Our jerseys are a perfect fit and give you that vital layer during
+          sport and daily life. The jerseys from O ur Company are designed to
+          suit your active lifestyl e.
+        </p>
+      </div>
+      <div class="column">
+        <h3>Information</h3>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Shipping </a></li>
+          <li><a href="#">Privacy Notice</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="#">Search</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#new-arrival">New Profucts</a></li>
+          <li><a href="#">Recently Viewed</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+    <script src="script.js"></script>
+</body>
+</html>

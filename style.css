@@ -1,0 +1,1223 @@
+:root {
+  --primary: #dbe2ef;
+  --secondary: #3f72af;
+  --white: #f9f7f7;
+  --blue: #112d4e;
+  --gradient-color: linear-gradient(
+    90deg,
+    hsla(186, 33%, 94%, 1) 0%,
+    hsla(216, 41%, 79%, 1) 100%
+  );
+  --btn-gradient: linear-gradient(to right, #3384e1, #7752d9);
+  --btn-gradient-hover: linear-gradient(to right, #5e95e4, #8b70dd);
+  --h1-primary: "Playfair Display", serif;
+  --h1-secondary:"Montserrat", sans-serif;
+  --text-font:"Roboto", sans-serif;
+  --h1-size:16px;
+
+
+}
+
+
+.my-button {
+  background: linear-gradient(to right, #3384e1, #7752d9);
+  background-color: #3384e1;
+  color: #fff;
+
+  font-size: 17px;
+  font-weight: 400;
+
+  text-decoration: none;
+  padding: 14px 15px;
+  border: 0px solid #000;
+  border-radius: 10px;
+  display: inline-block;
+}
+.my-button:hover {
+  background: linear-gradient(to right, #5e95e4, #8b70dd);
+  background-color: #5e95e4;
+}
+/* .my-button:active{
+  transform: scale(0.95);
+ } */
+body,
+h1
+ {
+  margin: 0;
+  padding: 0;
+  font-family: var(--h1-secondary);
+  font-weight: 800;
+}
+p,h2{
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  background-color: #f7f7f7;
+}
+
+/* ReUseable  Components*/
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.flexCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* ......................... */
+/* Logo */
+.JS-logo img {
+  height: 90px;
+  width: 115px;
+  margin-left: 10px;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f9f7f7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto Slab", serif;
+}
+
+.menu {
+  list-style-type: none;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333333;
+  transition: color 0.3s ease;
+  /* font-family: var(--h1-primary); */
+  font-family: var(--h1-secondary);
+  font-size: var(--h1-size); 
+  font-weight: 600;
+  
+
+
+}
+
+.menu li a:hover {
+  color: #7f7efd;
+}
+
+/* Score Section Styles */
+.score-big {
+  font-weight: 700;
+  
+}
+.scorebig {
+  /* background-color: #F9F7F7; */
+}
+.score {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #DBE2EF; */
+
+  background: linear-gradient(
+    90deg,
+    hsla(186, 33%, 94%, 1) 0%,
+    hsla(216, 41%, 79%, 1) 100%
+  );
+}
+
+.text {
+  width: 70%;
+  padding: 30px;
+  text-align: left;
+}
+.btn {
+  font-family: var(--text-font);
+  background-color: #3f72af;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 19px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #2e5a8b;
+}
+
+.score-big {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  max-width: 30%;
+  height: auto;
+}
+
+.Authentic-Retro {
+  margin-top: 3rem;
+  height: auto;
+}
+.Authentic-Retro:hover {
+}
+.Authentic-Retro .hleft {
+  transition: 1s ease;
+}
+.Authentic-Retro .hleft:hover {
+  transform: scale(1.05);
+}
+.Authentic-Retro .hright {
+  transition: 1s ease;
+}
+.Authentic-Retro .hright:hover {
+  transform: scale(1.05);
+}
+
+/* New Arrival Section Styles */
+.new-arrival {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.new-arrival h1 {
+  font-family: var(--h1-primary);
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+}
+
+.card {
+  background-color: #dbe2ef;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+.card img {
+  max-width: 100%;
+  height: 400px;
+}
+
+.card-details {
+  padding: 10px;
+}
+
+/* .product */
+
+.pr-collection {
+  margin-top: 20px; /* Adjust margin as needed */
+  background-color: #f9f7f7;
+}
+.pr-collection h1 {
+  font-family: var(--h1-primary);
+  font-size: 38px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.product-cards {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.product-card {
+ 
+  width: calc(25% - 10px); /* Adjust width and margin as needed */
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.pr-collection .info {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  transition: transform 0.5s ease;
+}
+.product-card img:hover {
+  transform: scale(1.1);
+}
+.pr-collection .btn {
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 50px;
+}
+/* footwear */
+.footwear h1 {
+  font-family: var(--h1-primary);
+  font-size: 38px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.footwear {
+  margin-top: 20px; /* Adjust margin as needed */
+  background-color: #f9f7f7;
+}
+
+.footwear .product-card img {
+  height: 300px;
+  width: 100%;
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+.footwear .product-card img:hover {
+  transform: scale(1.1);
+}
+.footwear .info {
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
+.footwear p {
+  color: #3f72af;
+}
+
+/* newsletter */
+
+.newsletter {
+  background-color: #dbe2ef;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+  line-height: 2.5rem;
+}
+.newsletter input {
+  border: 1px solid;
+  width: 30%; /* Adjust the width as needed */
+  font-size: 18px;
+  background-color: #dbe2ef;
+}
+.newsletter i {
+  margin-left: -25px;
+}
+
+/* ...............................customized  jersey page....................................*/
+.topper{
+  padding-top: 1rem;
+  margin-top: 1rem;
+  font-family: var(--h1-primary);
+  font-size: 38px;
+}
+.Custom-Jerseys .product-cards {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1.5rem;
+}
+.Custom-Jerseys .product-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.Custom-Jerseys h1{
+ 
+}
+.custom-main h4{
+  font-family: var(--h1-primary);
+  font-size: 38px;
+}
+ .threeD {
+  display: flex;
+  justify-content: center;
+  background-color: var(--white);
+}
+
+.td-main {
+  width: 70%;
+  height: 800px;
+
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  column-gap: 5.5rem;
+  
+}
+.td-left {
+  width: 50%;
+  height: auto;
+}
+
+.threeD h1 {
+  font-family: var(--h1-primary);
+  /* font-size: 38px; */
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+.threeD p {
+  margin-bottom: 20px;
+  font-family: var(--text-font);
+}
+
+.td-main img {
+  height: 700px;
+  border-radius: 10px;
+} */
+
+.fabrics-main {
+  /* background-color: #F6F1F1; */
+  height: 600px;
+  width: auto;
+  display: flex;
+}
+/* 
+.fabrics-main img {
+  height: 200px;
+  width: 200px;
+}
+.fab-left {
+  background-color: var(--white);
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.fab-left p {
+  margin-top: 10px;
+  font-family: "Kanit", sans-serif;
+  font-size: 13px;
+}
+.fab-left h5 {
+  margin-top: 13px;
+  font-family: "Roboto Slab", serif;
+}
+
+.fab-right {
+  background-color: var(--white);
+  box-shadow: -0.5px 0 0 0 rgb(103, 100, 100);
+
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  row-gap: 15px;
+}
+
+.fab-right h1 {
+  color: red;
+  font-size: 30px;
+  font-family: "Playpen Sans", cursive;
+}
+
+.fab-right button {
+  font-family: "Noto Sans Kawi", sans-serif;
+
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.9s ease-in;
+}
+.fab-right button:hover {
+  background-color: var(--orange-soda);
+} */
+
+/* Customize jersey Page */
+.custom {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-main {
+  width: 80%;
+  height: 500px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+
+  background: var(--gradient-color);
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  border-radius: 40px;
+}
+
+.custom-main:hover {
+  opacity: 0.9;
+}
+
+.custom .txt {
+  padding: 40px;
+}
+/* 
+Why Us to Make Custom Jersey? */
+#customize-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.cch1 {
+  margin-left: 20px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-container .card {
+  background-color: var(--white);
+
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card:hover {
+  background-color: var(--primary);
+}
+.cicon {
+  font-size: 3rem;
+  color: rgb(168, 23, 23);
+}
+.card:hover .cicon {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+h3 {
+  margin-bottom: 10px;
+  color: var(--secondary);
+}
+
+.picture img {
+  border-radius: 0.1%;
+  /* display: block; */
+  margin: 100px 40px 30px 50px;
+
+  height: 300px;
+  width: 450px;
+}
+
+.txt h4 {
+  color: red;
+  margin-bottom: 40px;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+
+.txt button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.9s ease-in;
+}
+
+.txt button:hover {
+  background-color: var(--orange-soda);
+}
+
+/* footer */
+
+footer {
+  background-color: #112d4e;
+  width: 100%;
+  color: #fff;
+  padding: 30px 0;
+}
+
+footer .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .column {
+  width: 30%;
+}
+footer .container p {
+  font-size: small;
+}
+
+footer .column h3 {
+  margin-bottom: 10px;
+}
+
+footer .column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer .column ul li {
+  margin-bottom: 5px;
+}
+
+footer .column ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+a {
+  font-size: small;
+}
+
+footer .column ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Jersey Collections */
+/* .................. */
+
+.trendingP-main{
+  margin-top: 10px;
+  margin-bottom: 25px;
+
+}
+.trendingP-main .right:hover {
+  transform: scale(1.1);
+}
+
+.trendingP-main .left:hover {
+  transform: scale(1.1);
+}
+
+.teamlogo {
+  margin-top: 20px;
+  margin-bottom: 1rem;
+}
+.teamlogoh1 h1 {
+  font-family: var(--h1-primary);
+  font-size: 38px;
+  font-weight: 900;
+  margin-top: 1rem;
+ 
+}
+.teamlgo-main{
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.teamlogo img {
+  height: 100px;
+  width: 100px;
+}
+
+.justddropped {
+  width: 100%;
+}
+
+
+/* card */
+.heading h1{
+  padding-top: 10px;
+  font-family: var(--h1-primary);
+  font-size: 38px;
+ font-weight: 900;
+}
+.jc-national {
+  margin-top: 30px;
+}
+
+.jc-national .cards-container {
+  font-family: var(--text-font);
+  font-weight: 600;
+
+}
+.cardtxt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.jc-national .cards-container .card {
+  background-color: var(--white);
+}
+.jc-national .cards-container .card img {
+}
+span {
+  color: red;
+}
+.card-button {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 9px;
+}
+.card-button a {
+  text-decoration: none;
+}
+
+.card-button-inner {
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.card-btn .addToCart {
+  background: var(--btn-gradient);
+  font-size: 15px;
+  padding: 9px;
+  border: 2px solid var(--secondary);
+  color: var(--white);
+  border-radius: 3px;
+}
+
+.card-btn .addToCart:hover {
+  background: var(--btn-gradient-hover);
+}
+
+.wish-btn {
+  border: 2px solid var(--secondary);
+  color: var(--blue);
+  font-size: 15px;
+  padding: 9px;
+  border-radius: 3px;
+}
+.wish-btn:hover {
+  background: var(--btn-gradient);
+  color: var(--white);
+}
+
+.card-btn {
+  margin: 0px 0px 11px 6px;
+}
+.viewAll-btn {
+  border: none;
+  font-size: large;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* .........................Accessories Page..................... */
+/* shoe catagory */
+.catainfo{
+  text-align: center;
+  padding: 20px 0px;
+  
+
+
+}
+.catainfo h1{
+  font-family: var(--h1-primary);
+  font-size: 38px;
+ font-weight: 900;
+
+}
+.catainfo p{
+  margin-top: 10px;
+  font-family: var(--h1-secondary);
+}
+.shoe-cat {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.shoe-cat .card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.shoe-cat .card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.shoe-cat .card h3 {
+  margin: 15px 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.shoe-cat .card p {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.shoe-cat .card .shop-now {
+  /* display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s; */
+
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #2196F3;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  
+}
+
+.shoe-cat .card .shop-now:hover {
+  /* background-color: #0056b3; */
+  background-color: #1e7ac7;
+}
+
+.shoe-cat .card:hover {
+  transform: translateY(-10px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .... */
+.acc-main h1{
+  font-family: var(--h1-primary);
+  font-size: 38px;
+ font-weight: 900;
+ 
+}
+.acc-main{
+  padding-bottom: 40px;
+}
+.acc-h1{
+  font-family: var(--h1-primary);
+  font-size: 38px;
+  text-align: center;
+  padding: 30px 0px;
+}
+.acc-main{
+ 
+  width: 90%;
+  height: auto;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.acc-boots .card img{
+
+    max-width: 100%; /* Set maximum width to 100% of parent container */
+    height: 350px; /* Maintain aspect ratio */
+  
+  
+  
+
+}
+
+.button-container{
+  display: flex;
+  flex-direction: column;
+
+
+}
+.button-container .btnjs{
+ 
+  /* font-size: 1px; */
+
+  border: none;
+
+ 
+
+  
+}
+.button-container .btnjs a{
+
+ 
+
+
+font-size: 18px;
+
+ 
+
+  
+}
+
+
+/* 3D Custoomizer Editing Panel */
+
+
+.editing-panel {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-columns: .5fr 2fr 2fr; /* Creates 3 equal columns */
+  gap: 10px; /* Optional: Adds space between columns */
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.toolbar {
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.tool {
+  padding: 10px;
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  user-select: none;
+}
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.jersey-preview {
+  background-color: #ccc;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  margin-bottom: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+}
+
+.jersey-preview img {
+  width: 600px;
+  height: auto;
+
+}
+
+.jersey-preview .box {
+  width: 300px;
+  height: 300px;
+  background-color: #28a745;
+  background-image: url(image/3D.webp);
+  background-position: center;
+  background-size: cover;
+
+}
+
+.text-preview {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  color: #000;
+}
+
+.controls {
+  width: 100%;
+width: auto;
+  background-color: var(--primary);
+  padding: 30PX 50PX;
+}
+
+.text-controls label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.text-controls input,
+.text-controls select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.add-to-cart {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.btnshare{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.btnshare button{
+  padding: 20px 20px;
+  background-color:var(--white);
+  font-weight: 700;
+ 
+}
+.btnshare button:hover{
+  padding: 20px 20px;
+ 
+  opacity: .8;
+  color: white;
+  background-color: #000;
+ 
+}
+.btnshare button i{
+  padding-right: 10px;
+  font-size: 20px;
+  
+}
+.btnshare button i:hover{
+  color: white;
+}
+
+/* AboutUS Page */
+.about-main{
+  text-align: center;
+  height: auto;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 80px;
+  font-family: var(--h1-secondary);
+}
+.abbtn{
+  background-color: var(--blue);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  
+}
+.abbtn:hover{
+  opacity: 0.7;
+}
+
+.faq-main{
+  background-color: var(--secondary);
+  color:white;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 40px;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+.faq-main h1,h4,h2{
+  font-family: var(--h1-primary);
+}
+.faq-main p{
+  font-family: var(--h1-secondary);
+}
+.faq-left{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+
+}
+.security{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  justify-content: center;
+  align-items: center;
+  padding: 40px 60px;
+
+}
+.security .div1,.div2,.div3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 08px;
+}
+.security img{
+  width: 360px;
+  height: auto;
+}
+.security i{
+  font-size: 20px;
+}
+/* ............................................. */
+
+/* detailsssssssssssssss */
+details{
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 500px;
+  margin-right: 500px;
+
+}
+details>p{
+  border: 3px solid black;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-family: roboto;
+}
+details > summary{
+ 
+  font-size: 20px;
+  font-family: roboto;
+  
+
+}
+details >summary:hover{
+  cursor: pointer;
+  
+  
+}
+
+
+
+/* login
+ /* */ 
+
+
+
+
+ /* login end */
+
+
+
+
+
+
+
+
+
+
+
+ /* login */
+ 
+ /* review */
+
+ .review {
+   
+   
+  padding-top: 20px;
+     
+  justify-content: space-between;
+  display: grid;
+  
+  grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+ align-items: center;
+ margin: auto;
+ 
+
+}
+.review-card{
+
+  width: 380px;
+  background-color: #e3e3e7;
+ border: 2px solid black;
+ border-radius: 5px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 40px 15px 40px 15px;
+  text-align: center;
+  margin: 40px 15px 20px 15px;
+  
+
+
+}
+.reviewer {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.reviewer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.rating {
+  font-size: 24px;
+  color: #FFD700; 
+}
+
+.review-text {
+  font-size: 16px;
+  margin-top: 10px;
+  font-family: sans-serif;
+}
+
+.reviewer > h3{
+
+  font-family: 'Fjalla One', sans-serif;
+
+}
+

@@ -1,0 +1,393 @@
+
+:root {
+    --primary: #dbe2ef;
+    --secondary: #3f72af;
+    --white: #f9f7f7;
+    --blue: #112d4e;
+    --gradient-color: linear-gradient(
+      90deg,
+      hsla(186, 33%, 94%, 1) 0%,
+      hsla(216, 41%, 79%, 1) 100%
+    );
+    --btn-gradient: linear-gradient(to right, #3384e1, #7752d9);
+    --btn-gradient-hover: linear-gradient(to right, #5e95e4, #8b70dd);
+    --h1-primary: "Playfair Display", serif;
+    --h1-secondary:"Montserrat", sans-serif;
+    --text-font:"Roboto", sans-serif;
+    --h1-size:16px;
+  
+  
+  }
+  
+  
+  .my-button {
+    background: linear-gradient(to right, #3384e1, #7752d9);
+    background-color: #3384e1;
+    color: #fff;
+  
+    font-size: 17px;
+    font-weight: 400;
+  
+    text-decoration: none;
+    padding: 14px 15px;
+    border: 0px solid #000;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  .my-button:hover {
+    background: linear-gradient(to right, #5e95e4, #8b70dd);
+    background-color: #5e95e4;
+  }
+  /* .my-button:active{
+    transform: scale(0.95);
+   } */
+   body,
+   h1
+    {
+     margin: 0;
+     padding: 0;
+     font-family: var(--h1-secondary);
+     font-weight: 800;
+   }
+   p,h2{
+     margin: 0;
+     padding: 0;
+   
+   }
+   
+   body {
+     font-family: "Roboto Slab", serif;
+     background-color: #f7f7f7;
+   }
+   
+   /* ReUseable  Components*/
+   .flexRow {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+   }
+   .flexCol {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+   }
+   /* ......................... */
+   /* Logo */
+   .JS-logo img {
+     height: 90px;
+     width: 115px;
+     margin-left: 10px;
+   }
+   
+   /* Navbar Styles */
+   .navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 20px;
+     background-color: #f9f7f7;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   }
+   
+   .menu {
+     list-style-type: none;
+   }
+   
+   .menu li {
+     display: inline-block;
+     margin-left: 20px;
+   }
+   
+   .menu li a {
+     text-decoration: none;
+     color: #333333;
+     transition: color 0.3s ease;
+     font-size: 1.2rem;
+     font-weight: 600;
+   }
+   
+   .menu li a:hover {
+     color: #7f7efd;
+   }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Inner pages of Jersey Collection page */
+/* card-css */
+
+.card-section{
+  display: grid;  
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+}
+
+
+.product-card {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 25px;
+  padding: 20px 30px 30px 30px;
+  margin-top: 20px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  overflow: hidden;
+}
+.product-card .logo-cart{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-card .logo-cart img{
+  height: 40px;
+  width: 35px;
+  object-fit:cover;
+}
+.product-card .logo-cart i{
+  font-size: 27px;
+  color: #707070;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.product-card .logo-cart i:hover{
+  color: #333;
+}
+.product-card .main-images{
+  position: relative;
+  height: 210px;
+}
+.product-card .main-images img{
+  
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  
+  left: 45px;
+  top: -40px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.product-card .main-images img.active{
+  opacity: 1;
+}
+.product-card .shoe-details .shoe_name{
+  font-size: 24px;
+  font-weight: 500;
+  color: #161616;
+}
+.product-card .shoe-details p{
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  text-align: justify;
+}
+.product-card .shoe-details .stars i{
+  margin: 0 -1px;
+  color: #333;
+}
+.product-card .color-price .color-option{
+  display: flex;
+  align-items: center;
+}
+.color-price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
+.color-price .color-option .color{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-right: 8px;
+}
+.color-option  .circles{
+  display: flex;
+}
+.color-option  .circles .circle{
+  height: 18px;
+  width: 18px;
+  background: #0071C7;
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.color-price .price{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.color-price .price .price_num{
+
+  font-size: 25px;
+  font-weight: 600;
+  color: #020202;
+}
+.color-price .price .price_letter{
+  font-size: 10px;
+  font-weight: 600;
+  margin-top: -4px;
+  color: #707070;
+}
+.product-card .button{
+  position: relative;
+  height: 50px;
+  width: 100%;
+  border-radius: 25px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+.product-card .button .button-layer{
+  position: absolute;
+  height: 100%;
+  width: 300%;
+  left: -100%;
+  background-image: linear-gradient(135deg,#9708CC, #43CBFF,#9708CC, #43CBFF );
+  transition: all 0.4s ease;
+  border-radius: 25PX;
+}
+.product-card .button:hover .button-layer{
+  left: 0;
+
+
+}
+.product-card .button button{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+
+/* card-css */
+
+/* profile */
+.about-us{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+  
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+} 
+
+
+/* footer */
+
+footer {
+    background-color: #112d4e;
+    width: 100%;
+    color: #fff;
+    padding: 30px 0;
+  }
+  
+  footer .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer .column {
+    width: 30%;
+  }
+  footer .container p {
+    font-size: small;
+  }
+  
+  footer .column h3 {
+    margin-bottom: 10px;
+  }
+  
+  footer .column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  footer .column ul li {
+    margin-bottom: 5px;
+  }
+  
+  footer .column ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  a {
+    font-size: small;
+  }
+  
+  footer .column ul li a:hover {
+    text-decoration: underline;
+  }

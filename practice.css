@@ -1,0 +1,131 @@
+
+.editing-panel {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: .5fr 2fr 1fr; /* Creates 3 equal columns */
+    gap: 10px; /* Optional: Adds space between columns */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.toolbar {
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.tool {
+    padding: 10px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    user-select: none;
+}
+
+.editor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.jersey-preview {
+    background-color: #ccc;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    margin-bottom: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+ 
+  
+}
+
+.jersey-preview img {
+    width: 600px;
+    height: auto;
+
+}
+
+.jersey-preview .box {
+    width: 300px;
+    height: 300px;
+    background-color: #28a745;
+    background-image: url(image/3D.webp);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.text-preview {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    color: #000;
+}
+
+.controls {
+    width: 100%;
+    max-width: 500px;
+}
+
+.text-controls label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.text-controls input,
+.text-controls select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.box{
+    width: 100%;
+    height: auto;
+    
+}
+.btnshare{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.btnshare button{
+    padding: 20px 20px;
+}
+.btnshare button i{
+    padding-right: 10px;
+    font-size: 20px;
+    color: blue;
+}
