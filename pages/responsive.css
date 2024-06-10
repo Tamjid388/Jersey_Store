@@ -1,0 +1,173 @@
+@media (max-width: 480px){
+  body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: auto;
+  }
+    
+    .navbar {
+        background-color: brown;
+        
+       
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu li {
+       
+    }
+
+    .menu a {
+      
+    }
+
+  
+.scorebig{ padding: 10px;
+   
+}
+.scorebig .score{
+    background-color: blueviolet;
+  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  /* Center content horizontally */
+       
+        text-align: center;  /* Center text inside the score */
+}
+
+.score .text {
+    margin-bottom: 20px;
+  }
+
+  .score .text h2.score-big {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  
+  }
+
+  .score .text p {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+
+  .score .text .btn {
+
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .score .hero-image {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .score .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+  .hleft{
+    width: 480px;
+    height: max-content;
+
+  }
+  .hleft img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+  }
+  .hright{
+    width: 480px;
+    height: max-content;
+
+  }
+  .hright img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+  }
+  .Authentic-Retro{
+    display: flex;
+    flex-direction: column;
+   
+    padding: 20px 5px;
+  }
+/* 
+
+Home Page:Product Collection */
+.pr-collection {
+  padding: 10px;
+}
+
+.pr-collection h1 {
+  font-size: 1.5em; /* Adjust font size for smaller screens */
+  margin-bottom: 20px; /* Add space below heading */
+}
+
+.product-cards {
+  display: flex;
+  flex-direction: column; /* Stack product cards vertically */
+  align-items: center; /* Center the product cards */
+}
+
+.product-card {
+  width: 100%; /* Make each product card take full width */
+  margin-bottom: 20px; /* Add space between product cards */
+  padding: 10px; /* Add padding inside product cards */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.product-card img {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Add rounded corners to images */
+}
+
+.product-card .info {
+  text-align: center; /* Center-align text inside info */
+  margin-top: 10px; /* Add space above info section */
+}
+
+.product-card .info h3 {
+  font-size: 1.2em; /* Adjust font size for smaller screens */
+  margin-bottom: 10px; /* Add space below heading */
+}
+
+.product-card .info .btn {
+  width: 50%; /* Make button take full width */
+  padding: 10px; /* Adjust padding for buttons */
+}
+
+.pr-collection .btn {
+  width: 100%; 
+  padding: 15px;
+  margin-top: 20px; 
+}
+.pr-collection .vm-btn{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
