@@ -87,8 +87,10 @@ body {
   align-items: center;
   padding: 10px 20px;
   background-color: #f9f7f7;
+ 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-family: "Roboto Slab", serif;
+
 }
 
 .menu {
@@ -1220,4 +1222,8 @@ details >summary:hover{
   font-family: 'Fjalla One', sans-serif;
 
 }
+.hide{
+  display: none;
+}
+
 
