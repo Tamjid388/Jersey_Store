@@ -1,7 +1,48 @@
 
-
 @media screen and (max-width: 576px) {
-  header{
-    background-color: aquamarine;
+  header .navbar ,   .score , .Authentic-Retro {
+  
+    flex-direction: column;
   }
+  .menu li {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+   
+
+   
+  }
+  .product-cards{
+
+flex-direction: column;
+  }
+  .join-now
+  {
+    display: none;
+  }
+  .score{
+
+  }
+  .text{
+ 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

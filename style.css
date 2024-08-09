@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 :root {
   --primary: #dbe2ef;
   --secondary: #3f72af;
@@ -13,7 +16,8 @@
   --h1-primary: "Playfair Display", serif;
   --h1-secondary:"Montserrat", sans-serif;
   --text-font:"Roboto", sans-serif;
-  --h1-size:16px;
+  --h1-size:1rem;
+  --p-text: #6C6C6C;
 
 
 }
@@ -125,28 +129,55 @@ body {
   
 }
 .scorebig {
-  /* background-color: #F9F7F7; */
+
 }
 .score {
   width: 100%;
-  height: 500px;
+  
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  /* background-color: #DBE2EF; */
+  /* border: 2px solid saddlebrown; */
+  padding: 90px 0px;
+  
 
+ 
+}
+header{
   background: linear-gradient(
     90deg,
     hsla(186, 33%, 94%, 1) 0%,
     hsla(216, 41%, 79%, 1) 100%
   );
 }
-
 .text {
-  width: 70%;
+ 
+ 
   padding: 30px;
   text-align: left;
 }
+.text p{
+  font-size: 1.5rem;
+
+  color: #6C6C6C;
+  line-height: 2.5rem;
+  margin-bottom: 40px;
+  margin-top: 40px;
+
+}
+
+
+.hero-image {
+
+ 
+
+}
+
+
+
+
+
+
 .btn {
   font-family: var(--text-font);
   background-color: #3f72af;
@@ -157,6 +188,8 @@ body {
   margin-right: 10px;
   margin-top: 19px;
   cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .btn:hover {
@@ -164,14 +197,10 @@ body {
 }
 
 .score-big {
-  font-size: 36px;
+  font-size: 4rem;
   margin-bottom: 20px;
 }
 
-.hero-image {
-  max-width: 30%;
-  height: auto;
-}
 
 .Authentic-Retro {
   margin-top: 3rem;
@@ -181,6 +210,9 @@ body {
 }
 .Authentic-Retro .hleft {
   transition: 1s ease;
+}
+.Authentic-Retro  img {
+ width: 100%;
 }
 .Authentic-Retro .hleft:hover {
   transform: scale(1.05);
@@ -246,6 +278,7 @@ body {
   padding-bottom: 20px;
 }
 .product-cards {
+  /* border: 2px saddlebrown solid; */
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -255,7 +288,7 @@ body {
 
 .product-card {
  
-  width: calc(25% - 10px); /* Adjust width and margin as needed */
+
   margin-bottom: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
